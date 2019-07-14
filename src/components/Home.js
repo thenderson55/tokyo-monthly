@@ -1,13 +1,24 @@
 import React from 'react';
 import { useStateValue } from "../context/store";
-
+import ApartmentCard from './ApartmentCard'
+import styled from 'styled-components'
 
 function Main() {
   const [{ apartments }, dispatch] = useStateValue();
   console.log(apartments)
 
+  const ApartmentsWrapper = styled.div`
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+  `;
+
   return (
-    <p>{apartments[0].name}</p>
+    <ApartmentsWrapper>
+      <ApartmentCard></ApartmentCard>
+      {/* <ApartmentCard></ApartmentCard> */}
+    </ApartmentsWrapper>
   );
 }
 
