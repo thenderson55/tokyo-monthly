@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStateValue } from "../context/store";
 import styled from 'styled-components'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 const ApartmentCard = () => {
   const [{ apartments }, dispatch] = useStateValue();
@@ -25,8 +27,8 @@ const ApartmentCard = () => {
       margin: auto;
       padding: 5px;
      }
-
   `;
+
 
   return (
     <>
@@ -43,10 +45,11 @@ const ApartmentCard = () => {
             <p className="card-text">{apartment.amenities}</p>
           </div>
           <ul className="list-group list-group-flush">
-            <li className="list-group-item">{apartment.amenities}</li>
+            <li className="list-group-item">{apartment.location}</li>
           </ul>
           <div className="card-body">
-            <a href="contact" className="card-link">Inquire here</a>
+          <span style={{whiteSpace: 'pre'}}>Available from: {apartment.availability}     <Link className="card-link" to="/contact">Inquire here</Link>
+          </span>
           </div>
         </Apartment>
       )
