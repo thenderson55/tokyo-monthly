@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 function Main() {
   const [{ apartments }, dispatch] = useStateValue();
-  console.log(apartments)
 
   const ApartmentsWrapper = styled.div`
     display:flex;

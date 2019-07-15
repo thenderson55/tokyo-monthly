@@ -1,15 +1,16 @@
 import{ apartments } from '../data/apartments'
 
 export const initialState = {
-  apartments: apartments
+  apartments: apartments,
+  apartmentId: null
 };
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case "CHANGE_APT":
+    case "UPDATE_APTID":
       return {
         ...state,
-        region: action.payload
+        apartmentId: action.payload
       };
     default:
       return state;

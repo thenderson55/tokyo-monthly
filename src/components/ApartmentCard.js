@@ -1,8 +1,7 @@
 import React from 'react'
 import { useStateValue } from "../context/store";
 import styled from 'styled-components'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const ApartmentCard = () => {
   const [{ apartments }, dispatch] = useStateValue();
@@ -29,12 +28,15 @@ const ApartmentCard = () => {
      }
   `;
 
+  const aptLink =(aptId) =>{ 
+    return `/apt/${aptId}`;
+  }
 
   return (
     <>
-    { apartments && apartments.map(apartment => {
+    { apartments && apartments.map((apartment, i) => {
       return (
-        <Apartment className="card mb-3">
+        <Apartment className="card mb-3" key={i}>
           <h3 className="card-header">{apartment.name}</h3>
           <div className="card-body">
             <h5 className="card-title">{apartment.description}</h5>
@@ -48,8 +50,10 @@ const ApartmentCard = () => {
             <li className="list-group-item">{apartment.location}</li>
           </ul>
           <div className="card-body">
-          <span style={{whiteSpace: 'pre'}}>Available from: {apartment.availability}     <Link className="card-link" to="/contact">Inquire here</Link>
+          <span style={{whiteSpace: 'pre'}}>Available from: {apartment.availability}     
           </span>
+          <br/>
+          <Link className="card-link" to={aptLink(i)}>More photos</Link>
           </div>
         </Apartment>
       )

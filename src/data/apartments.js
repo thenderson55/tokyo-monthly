@@ -15,6 +15,7 @@ export const apartments = [
       "description": "Next to the amazing Shinjuku Gyoen park!",
       "descriptionLong": "",
       "mainImage": "https://ik.imagekit.io/toto55/aptOne1_QPUOVnZ77.png",
+      "images": ["https://ik.imagekit.io/toto55/aptOne1_QPUOVnZ77.png", "https://ik.imagekit.io/toto55/aptOne2_pl-3OCd1U.png", "https://ik.imagekit.io/toto55/aptOne4_Qn9FiVIQe.png", "https://ik.imagekit.io/toto55/aptOne5_9kncIsPJQ.png", "https://ik.imagekit.io/toto55/aptOne6_87zYi8LW3.png"],
       "price": "140,000 JPY per month (27.8 sqm)",
       "amenities": "Double bed, Small Kitchen, TV, Sofa, Washing Machine, All Bills inc., High-Speed Unlimited Wi-Fi, Concrete Walls",
       "location": "Shinjuku Gyoen Mae - 3 mins, Shinjuku Sanchome - 5 mins, JR Shinjuku - 9 mins",
