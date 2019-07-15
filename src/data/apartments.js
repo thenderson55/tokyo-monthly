@@ -4,6 +4,7 @@ export const apartments = [
       "description": "Close to all the excitement of Kabukicho!",
       "descriptionLong": "",
       "mainImage": "https://ik.imagekit.io/toto55/9mins1_I74zYS-Rf.png",
+      "images": ["https://ik.imagekit.io/toto55/9mins1_I74zYS-Rf.png", "https://ik.imagekit.io/toto55/9mins4_Ieh00l7DS.png", "https://ik.imagekit.io/toto55/9mins2_NIJpdN8fV.png", "https://ik.imagekit.io/toto55/9mins3_BSMcP2wcF.png", "https://ik.imagekit.io/toto55/9mins5_Wns5vQAQqD.png", "https://ik.imagekit.io/toto55/9mins6_b1H0k-oR6.png"],
       "price": "130,000 JPY per month (23.4 sqm)",
       "amenities": "Double bed, Small Kitchen, TV, Sofa, Laundry in Building, All Bills inc., Portable Wi-Fi, Concrete Walls",
       "location": "Higashi Shinjuku - 5 mins, Shinjuku Sanchome - 8 mins, JR Shinjuku - 14 mins",
