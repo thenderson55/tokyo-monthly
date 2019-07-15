@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useStateValue } from "../context/store";
 import styled from 'styled-components'
 import AliceCarousel from 'react-alice-carousel'
