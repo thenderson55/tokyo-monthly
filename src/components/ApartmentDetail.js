@@ -13,7 +13,7 @@ const ApartmentDetail = (props) => {
 
   const ImageWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 0 10px;
   `;
@@ -30,6 +30,11 @@ const ApartmentDetail = (props) => {
       padding: 5px;
      }
   `;
+
+  const ImageText = styled.span`
+    text-align: center;
+    margin-top: 20px;
+  `
   
 
   const handleOnDragStart = e => e.preventDefault()
@@ -40,6 +45,7 @@ const ApartmentDetail = (props) => {
             return (
               <ImageWrapper key={i}>
                 <Image src={image} onDragStart={handleOnDragStart} className="yours-custom-class" />
+                {/* <ImageText>Text</ImageText> */}
               </ImageWrapper>
             )
           })} 
