@@ -8,9 +8,9 @@ const ApartmentCard = () => {
 
   const Apartment = styled.div`
     width: 500px;
-    &:hover {
+    /* &:hover {
       border-color: #3e3f3a;
-    }
+    } */
     @media (max-width: 990px) { 
       width: 400px;
      }
