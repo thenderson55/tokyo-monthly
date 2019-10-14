@@ -8,7 +8,7 @@ export const apartments = [
       "price": "130,000 JPY per month (23.4 sqm, all bills inc.)",
       "amenities": "Studio Apt., Double bed, Small Kitchen, TV, Sofa, Laundry in Building, All Bills inc., Portable Wi-Fi, Concrete Walls, Double-glazed Windows",
       "location": "Higashi Shinjuku - 5 mins, Shinjuku Sanchome - 8 mins, JR Shinjuku - 14 mins",
-      "availability": "From October 6th 2019"
+      "availability": "From January 5th 2020"
     },
     {
       "name": "9 mins to Shinjuku",
@@ -19,7 +19,7 @@ export const apartments = [
       "price": "140,000 JPY per month (27.8 sqm, all bills inc.)",
       "amenities": "Studio Apt., Double bed, Kitchen, TV, Sofa, Washing Machine, All Bills inc., High-Speed Unlimited Wi-Fi, Concrete Walls, Double-glazed Windows",
       "location": "Shinjuku Gyoen Mae - 3 mins, Shinjuku Sanchome - 5 mins, JR Shinjuku - 9 mins",
-      "availability": "From October 5th 2019"
+      "availability": "From January 5th 2020"
 
     }
   ]
