@@ -36,6 +36,7 @@ const ApartmentCard = () => {
     <>
     { apartments && apartments.map((apartment, i) => {
       return (
+        <>
         <Apartment className="card mb-3" key={i}>
           <h3 className="card-header">{apartment.name}</h3>
           <div className="card-body">
@@ -49,15 +50,20 @@ const ApartmentCard = () => {
           <ul className="list-group list-group-flush">
             <li className="list-group-item">{apartment.location}</li>
           </ul>
+         
           <div className="card-body">
           <span style={{whiteSpace: 'pre'}}>Available from: {apartment.availability}     
           </span>
           <br/>
           <Link className="card-link" to={aptLink(i)}>
-          <h3>More photos</h3>
+          <span style={{fontSize: 24}}>More photos</span>
           </Link>
           </div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">"This was a really nice apartment!" CC10 Student</li>
+          </ul>
         </Apartment>
+        </>
       )
     })}
     </>
