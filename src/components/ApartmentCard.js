@@ -53,7 +53,9 @@ const ApartmentCard = () => {
           <span style={{whiteSpace: 'pre'}}>Available from: {apartment.availability}     
           </span>
           <br/>
-          <Link className="card-link" to={aptLink(i)}>More photos</Link>
+          <Link className="card-link" to={aptLink(i)}>
+          <h3>More photos</h3>
+          </Link>
           </div>
         </Apartment>
       )
